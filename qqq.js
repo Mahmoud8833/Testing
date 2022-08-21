@@ -1,5 +1,65 @@
 "use strict";
 
+let a = 10;
+
+// while (1) {
+//   let i = prompt("Enter a number", "");
+//   if (i > 100) {
+//     break;
+//   } else {
+//     alert("try again");
+//   }
+// }
+
+//using label to break a nested loop
+// outer: for (let i = 0; i < 3; i++) {
+//   for (let j = 0; j < 3; j++) {
+//     let input = prompt(`Value at coords (${i},${j})`, "");
+
+//     // if an empty string or canceled, then break out of both loops
+//     if (!input) break outer; // (*)
+
+//     // do something with the value...
+//   }
+// }
+
+// alert("Done!");
+
+// let sum = 0;
+
+// while (true) {
+//   let value = +prompt("Enter a number", "");
+
+//   if (!value) break; // (*)
+
+//   sum += value;
+// }
+// alert("Sum: " + sum);
+
+// for (let i = 0; i <= a; i++) {
+//     console.log(i);;
+
+// }
+
+// do {
+//     console.log(i);
+//     i++
+// } while (i <= a);
+
+// while (i <= 10) {
+//   console.log(i);
+//   i++;
+// }
+
+//nullish coalescing => checks for the defined variable
+
+// a===10? console.log(a): console.log('not 10');;
+// if(a===10){
+//     console.log(a);
+// }else{
+//     console.log('not 10');
+// }
+
 // alert("  -9  " + 5);
 
 // let a = (1 + 2, 3 + 4);
