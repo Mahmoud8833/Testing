@@ -2,6 +2,17 @@
 
 let a = 10;
 
+let sayHello = function (name) {
+  alert(`hello, ${name}`);
+};
+sayHello("Mahmoud");
+alert(sayHello);
+
+// function sayHello(name) {
+//   alert(`Hello, ${name}`);
+// }
+// sayHello("Mahmoud");
+
 // while (1) {
 //   let i = prompt("Enter a number", "");
 //   if (i > 100) {
