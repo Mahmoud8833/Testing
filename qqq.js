@@ -1,12 +1,39 @@
 "use strict";
 
-let a = 10;
-
-let sayHello = function (name) {
-  alert(`hello, ${name}`);
+let salaries = {
+  John: 100,
+  Ann: 160,
+  Pete: 130,
 };
-sayHello("Mahmoud");
-alert(sayHello);
+
+for (let salary in salaries) {
+  
+}
+
+
+// function isEmpty(obj) {
+//   for (let key in obj) {
+//     // if the loop has started, there is a property
+//     return false;
+//   }
+//   return true;
+// }
+// const users = {};
+// const user = {};
+// user.name = "John";
+// user.surname = "Smith";
+// user.name = "Pete";
+// delete user.name;
+
+// console.log(isEmpty(users));
+
+// let a = 10;
+
+// let sayHello = function (name) {
+//   alert(`hello, ${name}`);
+// };
+// sayHello("Mahmoud");
+// alert(sayHello);
 
 // function sayHello(name) {
 //   alert(`Hello, ${name}`);
