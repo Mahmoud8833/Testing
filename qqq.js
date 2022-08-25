@@ -1,15 +1,42 @@
 "use strict";
 
-let salaries = {
-  John: 100,
-  Ann: 160,
-  Pete: 130,
-};
+// let user = {
+//   name: "John",
+//   age: 30,
+// };
 
-for (let salary in salaries) {
-  
-}
+// let user = { name: "John" };
 
+// Object.assign(user, { name: "Pete" });
+
+// alert(user.name); // now user = { name: "Pete" }
+
+// let clone = Object.assign({}, user);
+
+
+// let user = { name: "John" };
+
+// let permissions1 = { canView: true };
+// let permissions2 = { canEdit: true };
+
+// // copies all properties from permissions1 and permissions2 into user
+// Object.assign(user, permissions1, permissions2);
+
+// // now user = { name: "John", canView: true, canEdit: true }
+
+
+
+// let salaries = {
+//   John: 100,
+//   Ann: 160,
+//   Pete: 130,
+// };
+// let sum = 0;
+// for (let salary in salaries) {
+//   console.log(salaries[salary]);
+//   sum += Number(salaries[salary]);
+// }
+// console.log(sum);
 
 // function isEmpty(obj) {
 //   for (let key in obj) {
