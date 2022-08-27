@@ -1,5 +1,37 @@
 "use strict";
 
+
+
+// let a = 255.795;
+// console.log(a.toString(36));
+// console.log(a.toString(16));
+// console.log(a.toString(8));
+// console.log(a.toString(2));
+// console.log(123456789..toString(16)); //note the double dot .. to cal a method to a number directly
+// console.log(Math.ceil(a)); //gets the higher num
+// console.log(Math.floor(a));  //gets the lower num
+// console.log(Math.round(a));  //round the decimal parts
+// console.log(Math.trunc(a)); //removes the decimal parts
+
+// console.log(isNaN(55));
+// console.log(isNaN("55"));
+// console.log(isNaN("nn"));
+// console.log(isFinite("mm"));
+// console.log(isFinite(654e29500));
+// console.log(Math.random());
+// console.log(Math.max(3, 5, -10, 0, 1));
+// console.log(Math.min(1, 2));
+// console.log(Math.pow(2, 10));
+// console.log(random(1, 5));
+
+// function randomInteger(min, max) {
+//   // now rand is from  (min-0.5) to (max+0.5)
+//   let rand = min - 0.5 + Math.random() * (max - min + 1);
+//   return Math.round(rand);
+// }
+
+// console.log(randomInteger(1, 3));
+
 // let user = {
 //   name: "John",
 //   age: 30,
@@ -13,7 +45,6 @@
 
 // let clone = Object.assign({}, user);
 
-
 // let user = { name: "John" };
 
 // let permissions1 = { canView: true };
@@ -23,8 +54,6 @@
 // Object.assign(user, permissions1, permissions2);
 
 // // now user = { name: "John", canView: true, canEdit: true }
-
-
 
 // let salaries = {
 //   John: 100,
