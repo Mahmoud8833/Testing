@@ -1,63 +1,62 @@
 "use strict";
 
-let str = "stringify";
+// let str = "stringify";
 
-// these are same for substring
-console.log( str.substring(2, 6) ); // "ring"
-console.log( str.substring(6, 2) ); // "ring"
+// // these are same for substring
+// console.log( str.substring(2, 6) ); // "ring"
+// console.log( str.substring(6, 2) ); // "ring"
 
-let str = "stringify";
+// let str = "stringify";
 
-// start at the 4th position from the right, end at the 1st from the right
-console.log( str.slice(-4, -1) ); // 'gif'
+// // start at the 4th position from the right, end at the 1st from the right
+// console.log( str.slice(-4, -1) ); // 'gif'
 
-let str = "stringify";
-console.log( str.slice(2) ); // 'ringify', from the 2nd position till the end
+// let str = "stringify";
+// console.log( str.slice(2) ); // 'ringify', from the 2nd position till the end
 
-let str = "stringify";
-console.log( str.slice(0, 5) ); // 'strin', the substring from 0 to 5 (not including 5)
+// let str = "stringify";
+// console.log( str.slice(0, 5) ); // 'strin', the substring from 0 to 5 (not including 5)
 
+// console.log( "Widget".startsWith("Wid") ); // true, "Widget" starts with "Wid"
+// console.log( "Widget".endsWith("get") ); // true, "Widget" ends with "get"
 
-console.log( "Widget".startsWith("Wid") ); // true, "Widget" starts with "Wid"
-console.log( "Widget".endsWith("get") ); // true, "Widget" ends with "get"
+// console.log( "Widget".includes("id") ); // true
+// console.log( "Widget".includes("id", 3) ); // false, from position 3 there is no "id"
 
-console.log( "Widget".includes("id") ); // true
-console.log( "Widget".includes("id", 3) ); // false, from position 3 there is no "id"
+// let str = "As sly as a fox, as strong as an ox";
+// let target = "as";
 
-let str = "As sly as a fox, as strong as an ox";
-let target = "as";
+// let pos = -1;
+// while ((pos = str.indexOf(target, pos + 1)) != -1) {
+//   console.log(pos);
+// }
 
-let pos = -1;
-while ((pos = str.indexOf(target, pos + 1)) != -1) {
-  console.log(pos);
-}
+// let str = "As sly as a fox, as strong as an ox";
 
-let str = "As sly as a fox, as strong as an ox";
+// let target = "as"; // let's look for it
 
-let target = "as"; // let's look for it
+// let pos = 0;
+// while (true) {
+//   let foundPos = str.indexOf(target, pos);
+//   if (foundPos == -1) break;
 
-let pos = 0;
-while (true) {
-  let foundPos = str.indexOf(target, pos);
-  if (foundPos == -1) break;
+//   console.log(`Found at ${foundPos}`);
+//   pos = foundPos + 1; // continue the search from the next position
+// }
 
-  console.log(`Found at ${foundPos}`);
-  pos = foundPos + 1; // continue the search from the next position
-}
+// let str = 'Widget with id';
 
-let str = 'Widget with id';
+// console.log( str.indexOf('Widget') ); // 0, because 'Widget' is found at the beginning
+// console.log( str.indexOf('widget') ); // -1, not found, the search is case-sensitive
 
-console.log( str.indexOf('Widget') ); // 0, because 'Widget' is found at the beginning
-console.log( str.indexOf('widget') ); // -1, not found, the search is case-sensitive
+// console.log( str.indexOf("id") ); // 1, "id" is found at the position 1 (..idget with id)
 
-console.log( str.indexOf("id") ); // 1, "id" is found at the position 1 (..idget with id)
+// console.log( 'Interface'.toUpperCase() ); // INTERFACE
+// console.log( 'Interface'.toLowerCase() ); // interface
 
-console.log( 'Interface'.toUpperCase() ); // INTERFACE
-console.log( 'Interface'.toLowerCase() ); // interface
-
-for (let char of "Hello") {
-  console.log(char); // H,e,l,l,o (char becomes "H", then "e", then "l" etc)
-}
+// for (let char of "Hello") {
+//   console.log(char); // H,e,l,l,o (char becomes "H", then "e", then "l" etc)
+// }
 
 // let a = 255.795;
 // console.log(a.toString(36));
