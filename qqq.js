@@ -1,6 +1,63 @@
 "use strict";
 
+let str = "stringify";
 
+// these are same for substring
+console.log( str.substring(2, 6) ); // "ring"
+console.log( str.substring(6, 2) ); // "ring"
+
+let str = "stringify";
+
+// start at the 4th position from the right, end at the 1st from the right
+console.log( str.slice(-4, -1) ); // 'gif'
+
+let str = "stringify";
+console.log( str.slice(2) ); // 'ringify', from the 2nd position till the end
+
+let str = "stringify";
+console.log( str.slice(0, 5) ); // 'strin', the substring from 0 to 5 (not including 5)
+
+
+console.log( "Widget".startsWith("Wid") ); // true, "Widget" starts with "Wid"
+console.log( "Widget".endsWith("get") ); // true, "Widget" ends with "get"
+
+console.log( "Widget".includes("id") ); // true
+console.log( "Widget".includes("id", 3) ); // false, from position 3 there is no "id"
+
+let str = "As sly as a fox, as strong as an ox";
+let target = "as";
+
+let pos = -1;
+while ((pos = str.indexOf(target, pos + 1)) != -1) {
+  console.log(pos);
+}
+
+let str = "As sly as a fox, as strong as an ox";
+
+let target = "as"; // let's look for it
+
+let pos = 0;
+while (true) {
+  let foundPos = str.indexOf(target, pos);
+  if (foundPos == -1) break;
+
+  console.log(`Found at ${foundPos}`);
+  pos = foundPos + 1; // continue the search from the next position
+}
+
+let str = 'Widget with id';
+
+console.log( str.indexOf('Widget') ); // 0, because 'Widget' is found at the beginning
+console.log( str.indexOf('widget') ); // -1, not found, the search is case-sensitive
+
+console.log( str.indexOf("id") ); // 1, "id" is found at the position 1 (..idget with id)
+
+console.log( 'Interface'.toUpperCase() ); // INTERFACE
+console.log( 'Interface'.toLowerCase() ); // interface
+
+for (let char of "Hello") {
+  console.log(char); // H,e,l,l,o (char becomes "H", then "e", then "l" etc)
+}
 
 // let a = 255.795;
 // console.log(a.toString(36));
@@ -41,7 +98,7 @@
 
 // Object.assign(user, { name: "Pete" });
 
-// alert(user.name); // now user = { name: "Pete" }
+// console.log(user.name); // now user = { name: "Pete" }
 
 // let clone = Object.assign({}, user);
 
@@ -86,13 +143,13 @@
 // let a = 10;
 
 // let sayHello = function (name) {
-//   alert(`hello, ${name}`);
+//   console.log(`hello, ${name}`);
 // };
 // sayHello("Mahmoud");
-// alert(sayHello);
+// console.log(sayHello);
 
 // function sayHello(name) {
-//   alert(`Hello, ${name}`);
+//   console.log(`Hello, ${name}`);
 // }
 // sayHello("Mahmoud");
 
@@ -101,7 +158,7 @@
 //   if (i > 100) {
 //     break;
 //   } else {
-//     alert("try again");
+//     console.log("try again");
 //   }
 // }
 
@@ -117,7 +174,7 @@
 //   }
 // }
 
-// alert("Done!");
+// console.log("Done!");
 
 // let sum = 0;
 
@@ -128,7 +185,7 @@
 
 //   sum += value;
 // }
-// alert("Sum: " + sum);
+// console.log("Sum: " + sum);
 
 // for (let i = 0; i <= a; i++) {
 //     console.log(i);;
@@ -154,11 +211,11 @@
 //     console.log('not 10');
 // }
 
-// alert("  -9  " + 5);
+// console.log("  -9  " + 5);
 
 // let a = (1 + 2, 3 + 4);
 
-// alert( a ); // 7 (the result of 3 + 4)
+// console.log( a ); // 7 (the result of 3 + 4)
 
 // Addition +,
 // Subtraction -,
@@ -168,15 +225,15 @@
 // Exponentiation **.
 
 // let result = confirm('are you 18+ years old?')
-// alert(result)
+// console.log(result)
 // let fName = prompt('what is yor first name?', 'Mahmoud')
 // let lName = prompt("what is yor last name?", 'Ali');
-// alert(`Your full name is: ${fName+' '+lName}`)
-// alert('Hello!')
+// console.log(`Your full name is: ${fName+' '+lName}`)
+// console.log('Hello!')
 
 /**
  * typeof operator x
- * console.log(typeof alert);
+ * console.log(typeof console.log);
  *
  */
 
@@ -213,7 +270,7 @@
 
 // const COLOR_ORANGE = "#FF7F00";
 // let color = COLOR_ORANGE;
-// alert(color); // #FF7F00
+// console.log(color); // #FF7F00
 // const myName = 'Mahmoud'
 
 // let name = "Mahmoud",
@@ -231,5 +288,5 @@
 
 //____________________
 
-//First alert
+//First console.log
 //console.log("Hello JavaScript!");
