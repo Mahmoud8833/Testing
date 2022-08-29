@@ -1,0 +1,156 @@
+body {
+    width: 100%;
+    min-height: 100vh;
+    /* background: linear-gradient(to right, var(--light-apple), var(--apple)); */
+    background-image: url(../images/scott-graham-OQMZwNd3ThU-unsplash.jpg);
+    background-size: cover;
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.wrapper form {
+    width: 390px;
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.wrapper.logo {
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper .logo img {
+    width: 120px;
+    height: 80px;
+    /* border-radius: 50%; */
+    margin-bottom: 15px;
+    margin-top: 10px;
+
+}
+
+/* .wrapper.logo span {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-left: 15px; 
+}*/
+.wrapper .special {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--light-purple-blue);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.wrapper p {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--light-purple-blue);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.wrapper p a {
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--purple);
+    text-align: center;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.wrapper form input {
+    margin-bottom: 35px;
+    width: 100%;
+    height: 35px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid var(--light-white);
+    color: var(--light-white);
+    padding: 5px 15px;
+}
+
+.wrapper form input::placeholder {
+    color: var(--light-purple-blue);
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 700;
+}
+
+.wrapper form button {
+    height: 50px;
+    border: none;
+    background: var(--light-purple-blue);
+    border-radius: 24px;
+    font-size: 18px;
+}
+
+.wrapper .help {
+    display: block;
+    color: var(--light-purple-blue);
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.wrapper .privacy {
+    font-size: 0.75em;
+    display: block;
+    color: var(--light-purple-blue);
+    font-weight: bold;
+}
+
+.wrapper .privacy a {
+    color: var(--light-purple-blue);
+    font-weight: bold;
+    margin-top: 5px;
+    text-decoration: underline;
+}
+
+.wrapper .activate {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--light-purple-blue);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.wrapper #resend {
+    height: 50px;
+    width: 250px;
+    border: none;
+    margin-top: 25px;
+    background: var(--light-purple-blue);
+    border-radius: 24px;
+    font-size: 18px;
+}
+
+.wrapper #terms {
+    font-size: 0.75em;
+    display: block;
+    color: var(--light-purple-blue);
+    font-weight: bold;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wrapper #terms a {
+    color: var(--light-purple-blue);
+    font-weight: bold;
+    margin-top: 5px;
+    text-decoration: underline;
+}

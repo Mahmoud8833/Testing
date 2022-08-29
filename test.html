@@ -1,40 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-	<title>Test</title>
-	<link rel="stylesheet" href="test.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500&family=The+Nautigal&display=swap"
-		rel="stylesheet">
-
-	
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/generals.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/navbar.css">
+	<title>Invoicing</title>
 </head>
 
 <body>
-	<p>&hearts;</p>
-	
-	<header>
-		<div id="bgcolor">
-			<button id="btn-click">Click ME!</button>
+	<!-- Start the Nav bar -->
+	<nav class="navbar">
+		<div class="app-logo">
+			<a href="">
+				<img src="images/logo.svg" alt=""> <!-- Our App Logo, Modified when logo design is finished -->
+			</a>
 		</div>
-	</header>
-
-
-
-	<!-- for countdown and backgroung change -->
-	<!-- <div id="bg-color">
-		<h1 id="countdown">10</h1>
-	</div> -->
-
-	<!-- Name: <input type="text" name="name" id="input">
-	<input type="submit" value="Submite" id="sub" onclick=fun()>
-
-	<p id="list"></p> -->
-
-	<script type="text/javascript" src="qqq.js"></script>
+		<!-- Links can be changed upon request -->
+		<ul class="links">
+			<a href="">
+				<li>Home</li>
+			</a>
+			<a href="">
+				<li>about</li>
+			</a>
+			<a href="">
+				<li>services</li>
+			</a>
+			<a href="">
+				<li>login</li>
+			</a>
+			<a href="">
+				<li>sign up</li>
+			</a>
+			<a href="">
+				<li>reviews</li>
+			</a>
+			<a href="">
+				<li>contact</li>
+			</a>
+			<a href="">
+				<li>for fun</li>
+			</a>
+			<a href="">
+				<li>see others</li>
+			</a>
+		</ul>
+		<div class="user-logo">
+			<img src="../images/image-avatar.jpg" alt=""> <!-- Our Team Logo, Modified when logo design is finished -->
+		</div>
+		<!-- Burger menu SVG form hard coded for mobile and tablets -->
+		<svg class="burger-menu" viewBox="0 0 100 80" width="30" height="30">
+			<rect width="100" height="10" fill="#7C5DFA"></rect>
+			<rect y="30" width="100" height="10" fill="#7C5DFA"></rect>
+			<rect y="60" width="100" height="10" fill="#7C5DFA"></rect>
+		</svg>
+	</nav>
+	<!-- End the Nav bar -->
 </body>
+<!-- Script to control navbar states -->
+<script src="../javascript/navbar.js"></script>
 
 </html>

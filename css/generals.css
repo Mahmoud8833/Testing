@@ -1,0 +1,76 @@
+:root {
+  --purple: #7c5dfa;
+  --light-purple: #9277ff;
+  --medium-dark-grey-blue: #1e2139;
+  --medium-grey-blue: #252945;
+  --white-purple: #dfe3fa;
+  --light-grey: #888eb0;
+  --light-purple-blue: #7e88c3;
+  --lighter-black: #0c0e16;
+  --apple: #ec5757;
+  --light-apple: rgb(255, 151, 151);
+  --light-white: #f8f8f8;
+  --dark-blue-black: #141625;
+  --main-font: "League Spartan", sans-serif;
+  --main-transition: 0.5s;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "League Spartan", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+button {
+  cursor: pointer;
+  transition: all var(--main-transition);
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+  width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+  width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+  width: 1170px;
+  }
+}
+main {
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,52 @@
+/********** fonts **********/
+@font-face {
+    font-family: league_spartan_bold;
+    src: url(../fonts/LeagueSpartan-Bold.ttf);
+}
+@font-face {
+    font-family: league_spartan_medium;
+    src: url(../fonts/LeagueSpartan-Medium.ttf);
+}
+@font-face {
+    font-family: league_spartan_regular;
+    src: url(../fonts/LeagueSpartan-Regular.ttf);
+}
+
+/********** root **********/
+:root{
+    --color_primary: #7C5DFA;
+    --color_secondary: #9277FF;
+    --color_success: #33D69F;
+    --color_danger: #EC5757;
+    --color_warning: #FF8F00;
+    --color_info: #7E88C3;
+    --color_light: #F8F8FB;
+    --color_dark: #141625;
+    --color_white: #ffffff;
+    --color_navbar: #373B53;
+}
+
+/********** basis **********/
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'league_spartan_regular', sans-serif;
+}
+/* Scroll bar styling */
+::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color_primary);
+  }
+/********** classes **********/
+/* 
+* Set your class here.
+* Remove this comment when you start.
+* Use the regulation.md for nameing.
+*/
